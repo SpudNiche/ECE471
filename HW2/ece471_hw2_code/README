@@ -1,0 +1,14 @@
+Name: Nicholas LaJoie
+
+Answers to homework questions in Part6:
+
+(a) Simply run `man ls`	to learn more about the ls command. 
+
+(b) The `-a` option will not hide any files starting with "."
+It will list ALL items in that directory.  
+
+(c) The linker   
+
+(d) I have my Pi 3 hooked up to a monitor via HDMI and have connected it to a network so that I can 
+download files directly to the Pi via a browser. I also have the option to ssh into my pi from my
+desktop or laptop.    

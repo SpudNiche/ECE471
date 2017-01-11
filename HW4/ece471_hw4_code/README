@@ -1,0 +1,37 @@
+ECE 471 Fall 2016 -- Homework 4
+
+Name: Nicholas LaJoie 
+
+
+What you did for something cool (if applicable): LED on when switched was pressed (using
+separate pin GPIO 18 to drive LED, GPIO pin 17 to received switch input)  
+
+
+Answers to Question #5:
+
+a. Why use usleep() instead of a busy loop? Busy loops will usually be optimized away
+by the compiler. usleep() is also pretty accurate and built into the system. No need to
+figure out how many cycles a busy loop needs. 
+
+b. How does having an operating system make life easy when programming GPIOs? It provides
+a layer of abstraction, has documentation that is common across all machines running
+that OS, and it doesn't require any special overhead (ie. WiringPi) knowledge. 
+
+c. What limitations does the OS impose that wouldn't be there if we were 
+writing directly to hardware? Permissions and security - it makes sure you're not screwing 
+anything up bad when trying to write to hardware in some way. 
+
+d. Would you consider a web browser as part of the operating system? Yes, as every system I've
+ever used has come with a browser, and it is incredibly useful to immediately access the internet
+easily in order to get software and do things on your machine. If it comes with the machine
+built in, I would consider it part of the operating system.  
+
+Answers to Question #6:
+
+a. Machine type: Raspberry Pi 3 Model B Rev 1.2
+
+b. Kernel version: Linux raspberrypi 4.4.9-v7+ #884 SMP Fri May 6 17:28:59 BST 2016 armv7l GNU/Linux
+
+c. Free Disk space: 23 Gb 
+
+d. The -h option makes the space/size results "human readable" by printing sizes in powers of 1024

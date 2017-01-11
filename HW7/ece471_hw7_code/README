@@ -1,0 +1,35 @@
+ECE471 Fall 2016 -- HW7
+
+Name: Nicholas LaJoie 
+
+4. Describe your something cool:
+Monitor temperature and display the high and low every minute
+
+
+5. a. Anti-lock brakes – hard, firm, or soft real-time task? Why? (10ms)
+	Hard - lives are at risk! 
+
+   b. Tune button – hard, firm or soft real-time task? Why? (1s) 
+	Soft - the results are typically useless after deadline, not really high priority. 
+
+   c. Video decoder with 60Hz framerate – hard, firm, or soft real-time task? Why?
+	Firm - info is useless if deadline is missed. 
+
+   d. One advantage of SPI over i2c? 
+	SPI requires less power, can be faster with full duplex, and i2c can be brought down by one device. 
+
+   e. MCP3008 datasheet – bitbang it? 
+	Bit-banging using GPIO with regular Linux is limited in speed – slower than the 10kHz minimum required by SPI.
+	(So no, couldn't bit-bang MCP3008 without encountering linearity errors)
+
+6. a. Using /dev/null – nothing happens, it's null! (empty directory/null device)
+
+   b. Using /dev/full - returns that nothing can be written because the device
+is full! (Write error, no space left on the device) 
+
+   c. Using /dev/zero – this could be useful if you need to constantly pass
+zeros as a command or to program. 
+
+   d. Using /dev/random – I'm assuming it's a device that generates random characters/numbers. 
+Could be useful if a program requires random input.  
+

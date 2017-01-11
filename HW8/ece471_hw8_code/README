@@ -1,0 +1,25 @@
+ECE471 Fall 2016 -- HW8
+
+Name: Nicholas LaJoie 
+
+
+3. Describe your something cool: Print the temperature in various units
+
+
+4. a. Why did we hook up to Vdd? 
+	In order to use parasite power, a strong pull-up is required from the
+	1-wire line. For our purposes, it makes sense to connect to Vdd. (And
+	provide our own pull-up resistor)
+
+   b. i2c, SPI, or 1-wire for 100 yard probe? Why?
+	1-wire has the longest reliable range among the three of them, so
+	let's use that one!  
+
+
+5. a. Linux fun - shell scripts (script prints custom message)
+
+
+
+
+
+

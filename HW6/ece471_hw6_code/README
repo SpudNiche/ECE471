@@ -1,0 +1,47 @@
+ECE471 HW6 -- Fall 2016
+
+Name: Nicholas LaJoie 
+
+
+5.	Describe what your "something cool" code does
+
+It does the same as last homework – displays the time in 24-hour format. 
+
+6.Questions 
+ a). What does the keyword static mean when you put it in front of C function
+definitions?
+
+It means the function is kept local to the file it was declared in. The 
+compiler might make it an inline fucntion. 
+
+ b). Does your code in this assignment implement the full i2c protocol? What
+is missing? 
+
+No, my code only supports a single device at a specific address (only one
+master and slave - full protocol allows multiple). I am unsure if this is code
+we need to implement on our end, but this code does not allow for clock 
+stretching or arbitration.  
+
+ c). Does your code handle all possible error conditions? List at least 
+one error condition your current code would not handle well. 
+
+My code does not handle all possible error conditions. One example is if the
+gpio_set_input/output functions failed, it would not be able to handle it 
+gracefully. Additionally, if the ACK bit fails, my code would not 
+properly handle the error that might be associated with it. 
+
+
+7.
+ a). Using 'cat' – One of the following interupts was listed: 
+
+IPI3:          9         12         11         13  Function call interrupts
+
+ b). Using 'yes' – what's the purpose? 
+
+It seems to simply output "y" and a newline until the program is stopped. It
+could be used to immediately send a response to a command that requests one, 
+or also be used to test if a system can handle a high load of repeated
+operations. 
+
+
+

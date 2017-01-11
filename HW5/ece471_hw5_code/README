@@ -1,0 +1,43 @@
+ECE471 HW5 -- Fall 2016
+
+Name: Nicholas LaJoie
+
+
+6. Describe what your "something cool" code does. 
+
+My something cool displays the time in 24-hour format. 
+
+7.
+ a). What part of the Raspberry Pi (hardware) is in charge of the initial 
+boot process? Is this normal for an ARM board?
+
+The videocore (GPU) is actually the first component to start the boot
+process by loading the first stage from ROM. This reads the bootcode from
+the FAT partition on the SD card into the L2 cache (it's RTOS - "ThreadX")
+and eventually hands it over to Linux. This is unusual, as most ARM devices
+run the first-stage bootloader (usually MLO) and then second-stage (uboot). 
+
+ b). Why is the /boot partition on the Pi a FAT32 filesystem? 
+
+It's simple, low-memory, compatible with most machines, and technically has
+no patents on it. Additionally, the boot firmware (burned into the CPU) is
+able to easily mount a FAT partition. 
+
+ c). What is the code/program called that is responsible for finishing the 
+boot process and loading the operating system? 
+
+start.elf (it initializes a few things, then loads and boots the Linux kernel)
+
+ d). In the i2cdetect output in part 2c you can see that addresses 0-2 and 
+0x78-0x7f are not scanned. Why are these addressess skipped?
+
+These addressess are reserved for different purposes (i.e. 1 is the start
+byte, 0 is general call address, and others are for future purposes or 
+different bus formats).  
+
+8.
+ a). Using wc – display_final.c has 117 lines 
+ b). Using diff – there are 121 lines in the diff file
+
+
+

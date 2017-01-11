@@ -1,0 +1,25 @@
+ECE471 HW10 -- Fall 2016
+
+Name: Nicholas LaJoie
+
+4.
+  a. Example of bad embedded code: The NASA Mars Climate Rover - ground software was
+written using lbf (pounds/foot) unit for force, while the craft was expecting
+Newtons for the units. As a result, it got too close to the upper atmosphere of Mars
+and disintegrated! 
+  b. Why do correct, document, test code that doesn't seem important? Software is often
+shared/open-source these days, so you never know if someone will use your code (i.e.
+from Github) for something important - they'll trust that you wrote & shared good
+code! Also, if you make it a habit now, it'll be easier to get a job as a software
+developer.
+
+5.
+  a. Changed it to Nov. 9 of 2012
+  b. The "Year of 2038" problem - the signed 32-bit integer used to represent time
+and date (UTC) will overflow on January 19, 2038 at 3:14:08, therefore, the Linux
+system can't and won't represent a time and date beyond that point at the moment! 
+  c. Seems like it would be very easy for us to fake the timestamp on our files,
+and you wouldn't be able to tell if we've tampered it. We should probably just turn 
+our homework in on time...
+
+

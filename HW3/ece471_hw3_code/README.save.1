@@ -1,0 +1,34 @@
+ECE 471 Fall 2016 -- Homework 3
+
+Name: Nicholas LaJoie
+
+Answer to Question #3a: Description of print_number routine – The routine loads
+an unitialized buffer to register r10 and then divides the number to be printed by 10. The
+remainder of the division is converted to ASCII by adding 0x30 and 
+stored into the buffer memory. The routine continues until each digit of the 
+number has been stored in the buffer in the correct order. 1 is added to the
+buffer containing the ASCII values, and then printed using the 'print_string'
+routine.  
+
+
+Answer to Question #6:
+
+a.Compare the size of the ARM32 hello_world executable and the THUMB hello_world.thumb executable. 
+
+b.Compare answer to (a) with HW2
+
+c.Which language might you use in a space constrained system? Why? 
+
+d.Which piece of code was easier/faster to write - C or Assembly? 
+
+Writing in c was both easier and faster for me, personally. This makes sense, as C (and
+most "higher-level" languages) are designed to ease the coding process of assembly. 
+
+
+Answer to Question #7a: What does 'cal 9 1752' do – there is no bug, this command simply prints
+the calendar for the specified month and year. In this case, September of 1752 is shown. To 
+verify this, I ran 'cal 5 1752' and it displayed May of 1752. (It also didn't hurt to look at 
+the 'man cal' page) 
+
+
+

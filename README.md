@@ -1,6 +1,4 @@
 # ECE471
 Embedded Systems
 
-Here be the place that I store all of my ECE 471 projects for the Fall Semester of 2016. Enjoy, folks. It's ~fairly terrible~ decent c code. 
-
-Niche 
+This is the place where I stored all of my ECE 471 projects for the Fall Semester of 2016. Enjoy, folks. It's ~fairly terrible~ decent c code.
